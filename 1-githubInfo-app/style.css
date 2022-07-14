@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #292c69;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 80%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input input {
+  width: 16rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #20205a;
+  border-radius: 0.8rem;
+  border-color: #00507e;
+  color: aliceblue;
+  font-size: 1rem;
+  text-align: center;
+}
+.input button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: #4040a1;
+  border: 1px solid #6666ff;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  color: aliceblue;
+  font-weight: bold;
+}
+.input button:hover {
+  background-color: #20205a;
+  box-shadow: 0rem 0rem 0.5rem black;
+}
+.input button:active {
+  background-color: #36008c;
+}
+
+.profile {
+  color: aliceblue;
+  background-color: #36008c;
+  box-shadow: 2px 2px 4px black;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
+  width: 8rem;
+  border-radius: 8rem;
+  box-shadow: 2px 2px 12px 2px black;
+}
+
+.user-data {
+  margin-top: 1rem;
+  text-shadow: 1px 1px black;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+#profile-extra {
+  display: flex;
+  gap: 0.2rem;
+}
+
+#profile-location,
+#profile-company {
+  margin-bottom: 0.5rem;
+  font-size: 80%;
+}
+
+#profile-info {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 80%;
+}
+
+#profile-location,
+#profile-company,
+#profile-info p {
+  background-color: #20205a;
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+
+@media only screen and (min-width: 750px) {
+  .profile {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #profile-avatar {
+    vertical-align: middle;
+  }
+
+  #profile-bio {
+    text-align: justify;
+  }
+}
