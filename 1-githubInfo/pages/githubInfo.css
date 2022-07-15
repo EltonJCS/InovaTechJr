@@ -12,7 +12,29 @@ body {
   align-items: center;
 }
 
+.arrow-previous-page {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #20205a;
+  padding: 0.2rem 0.5rem 0.5rem;
+  border-radius: 2rem;
+}
+.arrow-previous-page:hover {
+  background-color: #00507e;
+}
+
+.arrow-previous-page a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: aliceblue;
+}
+
 .container {
+  position: relative;
   max-width: 80%;
 }
 
@@ -26,7 +48,11 @@ body {
   width: 16rem;
   padding: 0.5rem;
   margin-top: 1rem;
-  background-color: #20205a;
+  background: linear-gradient(
+    0deg,
+    rgba(102, 102, 255, 0.5) 0%,
+    rgba(32, 32, 90, 1) 25%
+  );
   border-radius: 0.8rem;
   border-color: #00507e;
   color: aliceblue;
@@ -34,9 +60,15 @@ body {
   text-align: center;
 }
 .input button {
+  cursor: pointer;
   width: fit-content;
   padding: 0.5rem 1rem;
-  background-color: #4040a1;
+  background: linear-gradient(
+    0deg,
+    rgba(32, 32, 90, 1) 0%,
+    rgba(102, 102, 255, 0.5) 50%,
+    rgba(32, 32, 90, 1) 100%
+  );
   border: 1px solid #6666ff;
   border-radius: 1rem;
   margin-top: 0.5rem;
@@ -53,7 +85,11 @@ body {
 
 .profile {
   color: aliceblue;
-  background-color: #36008c;
+  background: radial-gradient(
+    circle,
+    rgba(102, 102, 255, 1) 0%,
+    rgba(32, 32, 90, 1) 100%
+  );
   box-shadow: 2px 2px 4px black;
   padding: 1.5rem 1rem;
   border-radius: 1rem;
@@ -106,6 +142,10 @@ body {
   border-radius: 1rem;
 }
 
+#profile-bio {
+  max-width: 24rem;
+}
+
 @media only screen and (min-width: 750px) {
   .profile {
     flex-direction: row;
@@ -114,9 +154,5 @@ body {
 
   #profile-avatar {
     vertical-align: middle;
-  }
-
-  #profile-bio {
-    text-align: justify;
   }
 }
